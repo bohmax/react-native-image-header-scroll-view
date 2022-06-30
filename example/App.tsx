@@ -18,7 +18,10 @@ export default function App() {
       )}
     >
       <View style={styles.content}>
-        <TriggeringView onHide={() => console.log('text hidden')}>
+        <TriggeringView
+          onDisplay={() => console.log('text hidden')}
+          onHide={() => console.log('text hidden')}
+        >
           <Text>Scroll Me!</Text>
         </TriggeringView>
       </View>

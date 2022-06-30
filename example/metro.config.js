@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 const path = require('path');
-const blacklist = require('metro-config/src/defaults/blacklist');
+const blacklist = require('metro-config/src/defaults/exclusionList');
 const escape = require('escape-string-regexp');
 const fs = require('fs');
 

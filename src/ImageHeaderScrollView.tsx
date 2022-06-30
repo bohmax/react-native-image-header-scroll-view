@@ -18,7 +18,7 @@ import {
 } from 'react-native';
 
 type Props = ScrollViewProps & {
-  children?: React.ElementType<any>;
+  children?: React.ReactNode;
   childrenStyle?: any;
   overlayColor: string;
   foregroundParallaxRatio: number;
@@ -26,11 +26,11 @@ type Props = ScrollViewProps & {
   maxOverlayOpacity: number;
   minHeight: number;
   minOverlayOpacity: number;
-  renderFixedForeground: () => React.ElementType<any>;
-  renderForeground?: () => React.ElementType<any>;
-  renderHeader: () => React.ElementType<any>;
+  renderFixedForeground: () => React.ReactNode;
+  renderForeground?: () => React.ReactNode;
+  renderHeader: () => React.ReactNode;
   foregroundExtrapolate: 'clamp' | 'extend' | 'identity' | undefined;
-  renderTouchableFixedForeground?: () => React.ElementType<any>;
+  renderTouchableFixedForeground?: () => React.ReactNode;
   ScrollViewComponent: React.ElementType<ScrollViewProps>;
   scrollViewBackgroundColor: string;
   headerImage?: ImageSourcePropType;
